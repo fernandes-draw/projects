@@ -1,0 +1,56 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.pyc
+*.pyo
+*.pyd
+*.cover
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.log
+*.pot
+*.py[cod]
+*.dist-info/
+.eggs/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+*.mo
+*.pot
+
+# Virtualenv
+project_env/
+env/
+venv/
+ENV/
+.venv/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
