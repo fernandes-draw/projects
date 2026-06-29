@@ -3,7 +3,7 @@ from django.contrib import messages
 from .forms import CustomUserCreationForm
 
 
-def cadastrar_usuario_view(request):
+def cadastrar_usuario(request):
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
@@ -19,7 +19,7 @@ def cadastrar_usuario_view(request):
             messages.success(
                 request, f"Usuário {usuario.username} cadastrado com sucesso como {grupo_selecionado.name}!")
             # Por enquanto redireciona para a própria tela
-            return redirect('cadastro_usuario_visual')
+            return redirect('cadastro_usuario')
     else:
         form = CustomUserCreationForm()
 
